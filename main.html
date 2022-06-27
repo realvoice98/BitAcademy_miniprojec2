@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BITFLIX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Gugi&family=Hi+Melody&family=Poor+Story&family=Single+Day&display=swap');
+  .font_HiMelody{
+    font-family: 'Hi Melody', cursive;
+    font-size:70px;
+  }
+  .font_HiMelody1{
+    font-family: 'Hi Melody', cursive;
+    font-size:100px;
+  }
+  .font_SingleDay{
+    font-family: 'Single Day', cursive;
+    font-size:30px;
+  }
+</style>
+</head>
+
+<body>
+  <!-- 상단바 -->
+  <header class="wrap_padding css-l38dyp ebuv48n6">
+    <a href="/">
+      <h1 class="css-8tmoim ebuv48n5 ">홈</h1></a>
+  </header>
+  <!-- 상단바 밑에 -->
+  <section>
+    
+    <div class="Welcome font_HiMelody1">환영합니다.</div>
+    <div class="sub font_SingleDay">내가 느낄 수 있는 최고의 순간 BITFLIX</div>
+    <div class="wrap">
+      <div class="login">
+          <div class="login_id">
+              <h4>E-mail</h4>
+              <input type="email" name="" id="" placeholder="Email">
+          </div>
+          <div class="login_pw">
+              <h4>Password</h4>
+              <input type="password" name="" id="" placeholder="Password">
+          </div>
+          <div class="submit">
+              <input type="submit" value="submit">
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <pre class="today-choice font_SingleDay animation_left">
+       <strong class="font_HiMelody" style="margin-left:90px;">최신 영화!</strong>
+
+비트플릭스에서 어디서도 볼 수 없던 최신영화를 시청하세요
+  </pre>
+  <div class="movie-list">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="다운로드.jpeg" style="width:65%">
+        <div class="text">Caption Text</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="다운로드 (1).jpeg" style="width:65%">
+        <div class="text">Caption Two</div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="다운로드 (2).jpeg" style="width:65%">
+        <div class="text">Caption Three</div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  <hr>
+
+  <pre class="today-choice2 font_SingleDay animation_right">
+<strong class="font_HiMelody">찜하고, 시청하세요</strong>
+
+   간편하게 저장하고 빈틈없이 즐겨보세요
+</pre>
+  <div class="movie-list2">
+    <img src="2297834.png" style="width:85% padding-left 20px">
+  </div>
+<hr>
+
+
+
+
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+  }
+  </script>
+
+</body>
+</html>
+
+

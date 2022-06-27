@@ -1,0 +1,425 @@
+body{
+  margin:0;
+  height: 2000px;
+  background-color: black;
+}
+.Welcome{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  color:aliceblue;
+  top:15%;
+  left:50%;
+  font-size: 70px;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+.sub{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  color:aliceblue;
+  top:25%;
+  left:50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+section{
+  /* background:url(https://assets.nflxext.com/ffe/siteui/vlv3/8ee18735-ada3-45be-b383-a94701054bb9/afb43404-fad1-4652-b371-7cb7456e539a/KR-ko-20220613-popsignuptwoweeks-perspective_alpha_website_small.jpg); */
+  height: 80vh;
+  background:url(gradation.png),url(image.jpeg),url(background_image.jpeg); 
+}
+/* section:before{
+  content:'';
+  background: linear-gradient(to top,black,transparent);
+  position:absolute;  
+  left:0;
+  height: 100%;
+  width:100%; 
+
+} */
+
+h1{
+  font-size: 50px;
+  color: white;
+}
+
+.movie-list{
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  width:550px;
+  height:500px;
+  margin-left:65%;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}   
+
+.movie-list2{
+  border-color: black;
+  border-style: solid;
+  border-width: 5px;
+  width:550px;
+  height:500px;
+  margin-right:20%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.text-center{
+  text-align: center;
+  margin-top: -40px;
+}
+
+.float-left{
+  float:left;
+}
+
+.float-right{
+  float:right;
+}
+
+.center{
+  position: absolute;
+  left: 50%;  
+  transform: translateX(-40%);
+}
+
+
+input {
+  width : 350px;
+  height: 30px;
+}
+
+.movie-img{
+  margin : 50px 0px 50px 220px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.today-choice{
+  float:left;
+  margin-top: 15%;
+  color: white;
+}
+
+.today-choice2{ 
+  float:right;
+  margin-right:15%;
+  margin-top:15%;
+  color: white;
+}
+/* 슬라이드 이미지 */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {display: none;}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.active {
+  background-color: #717171;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.css-l38dyp {
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  width: calc(100vw - var(--scrollbar-width));
+  height: 5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  top: 0;
+  background-image: initial;
+}
+
+
+.css-l38dyp {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    width: calc(100vw - var(--scrollbar-width));
+    height: 5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+    background-image: initial;
+}
+.css-l38dyp:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: backdrop-filter 0.3s linear,background-color 0.3s linear;
+  transition: backdrop-filter 0.3s linear,background-color 0.3s linear;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.wrap_padding {
+    padding-left: 3.888rem;
+    padding-right: 3.888rem;
+}
+/* 상단 아이콘 변화 */
+
+header input[id="menuicon"]{
+  display:none;
+}
+
+header input[id="menuicon"] + label {
+  display:block;
+  width:60px;
+  height:50px;
+  position:fixed;
+  cursor:pointer;
+  right:0;
+  top:calc(100%- 25px);
+  transition:all .35s; 
+} 
+header input[id="menuicon"]:checked + label {
+  z-index:2;
+  right:220px;
+} 
+
+
+header input[id="menuicon"] + label span {
+  display:block;
+  position:absolute;
+  width:100%;
+  height:5px;
+  border-radius:30px;
+  background:white;
+  transition:all .35s;
+}
+header input[id="menuicon"] + label span:nth-child(1) {
+  top:0;
+}
+header input[id="menuicon"] + label span:nth-child(2) {
+  top:50%;
+  transform:translateY(-50%);
+}
+header input[id="menuicon"] + label span:nth-child(3) {
+  bottom:0;
+}
+/* x모양으로 변환 */
+header input[id="menuicon"]:checked + label span:nth-child(1) {
+  top:50%;
+  transform:translateY(-50%) rotate(45deg);
+}
+header input[id="menuicon"]:checked + label span:nth-child(2) {
+  opacity:0;
+}
+header input[id="menuicon"]:checked + label span:nth-child(3) {
+  bottom:50%;
+  transform:translateY(50%) rotate(-45deg);
+} 
+
+
+div[class="sidebar"]{
+  width:300px;
+  height:100%;
+  background:black;
+  opacity: 0.5;
+  position:fixed;
+  top:0;
+  right:-300px;
+  z-index:1;
+  transition:all .35s;
+}
+
+header input[id="menuicon"]:checked + label + div{
+  right:0;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.login {
+  width: 30%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_sns {
+  padding: 0px;
+  display: flex;
+}
+
+
+.login_id {
+  margin-top: 20px;
+  width: 80%;
+  color:white;
+}
+
+.login_id input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 0px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.login_pw {
+  margin-top: 20px;
+  width: 80%;
+  color:white;
+}
+
+.login_pw input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+
+
+.submit {
+  margin-top: 50px;
+  width: 80%;
+}
+.submit input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: white;
+  color: black;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+/* 애니메이션 추가 */
+.animation_left {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+/* @keyframes rule */
+@keyframes move {
+  /* keyframe */
+  from {
+    left: 0;
+  }
+  /* keyframe */
+  to {
+    left: 200px;
+  }
+}
+
+.animation_right {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation-name: move1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+/* @keyframes rule */
+@keyframes move1 {
+  /* keyframe */
+  from {
+    right: 0;
+  }
+  /* keyframe */
+  to {
+    right: 300px;
+  }
+}
